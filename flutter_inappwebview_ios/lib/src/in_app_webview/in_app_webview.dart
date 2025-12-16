@@ -316,6 +316,7 @@ class IOSInAppWebViewWidget extends PlatformInAppWebViewWidget {
     }
 
     return UiKitView(
+      gestureBlockingPolicy: UiKitViewGestureBlockingPolicy.touchBlockingOnly,
       viewType: 'com.pichillilorenzo/flutter_inappwebview',
       onPlatformViewCreated: _onPlatformViewCreated,
       gestureRecognizers: params.gestureRecognizers,
